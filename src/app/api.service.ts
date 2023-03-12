@@ -8,6 +8,13 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
   fetchViewAll=()=>{
-    return this.http.get("http://localhost:3000/viewall")
+    return this.http.get("http://localhost:3000/viewall",)
+  }
+  sentvalue=(data:any)=>{
+    return this.http.post("http://localhost:3000/entry",data)
+
+
   }
 }
+
+
